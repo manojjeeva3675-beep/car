@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #abab35;
+
+}
+.container{
+    width: 300px;
+    height: 400px;
+    position: relative;
+}
+.card{
+    width: 300px;
+    height: 400px;
+    position: absolute; 
+    top:0;
+    left: 0;
+    border-radius: 15px;
+    /* display: flex;
+     justify-content: center;
+    align-items: center; */
+    font-size: 40px;
+    color: white;
+    transition: transform 0.5s ease;
+    transform-origin: bottom center;
+
+}
+.card1{
+    background: rgb(185, 0, 0);
+    z-index: 1;
+
+}
+.card2{
+    background: rgb(240, 17, 128);
+    z-index: 2;
+
+}
+.card3{
+    background:blue;
+    z-index: 3;
+    
+}
+.card4{
+    background: rgb(0, 247, 255);
+    z-index: 4;
+}
+.card5{
+    background:rgb(0, 255, 76) ;
+    z-index: 5;
+}
+.card6{
+    background: yellow;
+    z-index: 6;
+
+}
+.card7{
+    background: violet;
+    z-index: 7;
+}
+.card8{
+    background: orange;
+    z-index: 8;
+}
+.card9{
+    background: red;
+    z-index: 9;
+}
+.card10{
+    background: rgb(0, 255, 170);
+    z-index: 10;
+}
+.container:hover .card1{
+    transform: rotate(-40deg);
+}
+.container:hover .card2{
+    transform: rotate(-32deg);
+}
+.container:hover .card3{
+    transform: rotate(-24deg);
+}
+.container:hover .card4{
+    transform: rotate(-16deg);
+}
+.container:hover .card5{
+    transform: rotate(-8deg);
+}
+.container:hover .card6{
+    transform: rotate(8deg);
+}
+.container:hover .card7{
+    transform: rotate(16deg);
+}
+.container:hover .card8{
+    transform: rotate(24deg);
+}
+.container:hover .card9{
+    transform: rotate(32deg);
+}
+.container:hover .card10{
+    transform: rotate(40deg);
+}

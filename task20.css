@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    display: flex;
+}
+.first{
+    width: 250px;
+    height:100vh;
+    background-color: rgb(25, 3, 45);
+    color: white;
+
+    
+
+
+}
+.second{
+    width: 100%;
+    height: 100vh;
+    background-color:rgb(248, 244, 244);
+    
+
+}
+
+.table{
+
+    margin-top: 20px;
+    margin-left: 20px;
+   
+
+}
+li{
+     list-style:none;
+    font-size: 20px;
+    margin-top: 20px;
+
+}
+li:hover{
+    background-color: blue;
+    padding: 10px;
+
+
+
+}
+.small{
+    width: 150px;
+    height: 200px;
+    background-color: rgb(8, 57, 106);
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.but{
+    background-color: blue;
+    margin-top: 20px;
+    margin-left: 30px;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+
+}
+.small i{
+    font-size: 80px;
+    margin-left: 30px;
+
+}
+.heater i {
+          font-size: 30px;
+}
+
+.heater {
+    display: flex;
+    position: relative;
+}
+
+.list{
+    margin-right: 30px;
+}
+
+
+.search i{
+
+    font-size: 30px;
+    position: absolute;
+
+
+    
+}
+
+
+.search input{
+
+    padding: 7px;
+
+    padding-right: 200px;
+
+    padding-left: 50px;
+}
+
+input::placeholder {
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.head{
+    display: flex;
+    margin-left:600px;
+    padding: 10px;
+    gap: 10px;
+}
+.head img{
+    border-radius: 50%;
+}

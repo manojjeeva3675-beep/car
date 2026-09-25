@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.performance {
+    min-height: 100vh;
+    /* text-align: center; */
+    padding: 50px 20px;
+    
+    
+}
+
+
+
+
+
+
+h1 {
+    font-size: 20px;
+    letter-spacing: 8px;
+    
+    display: inline-block;
+}
+
+h2 {
+    font-size: 55px;
+    letter-spacing: 5px;
+    
+    
+}
+
+.car img {
+    width: 80%;
+    max-width: 900px;
+    height: 260px;
+    object-fit: cover;
+    display: inline-block;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    
+}
+
+.details h3 {
+    font-size: 30px;
+}
+
+.details p {
+    margin-top: 8px;
+    color: #aaa;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+    .details {
+        gap: 25px;
+    }
+
+    h2 {
+        font-size: 55px;
+    }
+
+    .car img {
+        width: 100%;
+        height: 250px;
+        
+    }
+}
+.car img{
+    
+    width:85vw;
+   margin-left: 300px;
+   display: inline-block;
+   z-index: -1;
+
+    
+   
+    animation: carmove 2s ease-in-out  forwards;
+   
+    
+}
+@keyframes carmove{
+    0%{transform: translatex(-500px);
+       opacity: 0;}
+        100%{transform: translateX(0);
+         opacity: 1;}
+      
+
+}
+img{
+    animation: logo 2s ease-in-out forwards;
+}
+img{
+    width: 150px;
+    height: 150px;
+    z-index: 2;
+    display: inline-block;
+    
+    
+    
+}
+@keyframes logo{
+    0%{transform: translatex(1200px);
+       opacity: 0;}
+        100%{transform: translateX(0);
+         opacity: 1;}}
+
+a{
+    margin-left:800px;
+    display: inline-block;
+   margin-top: -200px;
+   color: white;
+   padding: 5px;
+   text-decoration: none;
+   font-family:cursive;
+   font-size: 26px;
+
+
+    
+}
+a:hover{
+    color: yellow;
+}

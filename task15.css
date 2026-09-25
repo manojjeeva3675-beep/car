@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    width: 100%;
+    background-color: orange;
+    display: grid;
+    grid-template-columns: 1fr  1fr  1fr; 
+    /* grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); */
+    /* grid-template-columns: repeat(3 ,minmax(250px,1fr)); */
+    grid-template-rows: 1fr  1fr  2fr ; 
+    gap: 20px; /* it apply in both column & row in only grid */
+    /* or
+    row-gap: 20px; 
+    column-gap: 20px; */
+
+}
+.box{
+    background-color: blue;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+}

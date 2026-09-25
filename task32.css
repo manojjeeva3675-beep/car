@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color:white ;
+    --text-size:20px;
+    --padding:10px;
+    --heading_color:blue;
+    --bg_color:red;
+
+}
+
+h1{
+    color: var(--main-color);
+    font-size: var(--text-size);
+}
+
+button{
+    background-color:var(--main-color); 
+    padding: var(--padding);
+}
+
+.container{
+    width:calc(100% - 100px);
+    height:calc(100vh - 200px);
+    background-color:var(--bg_color);
+    padding: 20px;
+ 
+
+}
+
+.card{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: black(0,10,10,0);
+}

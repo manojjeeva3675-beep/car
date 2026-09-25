@@ -1,0 +1,154 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, sans-serif; /* Added default font */
+}
+
+.navbar {
+width: 100%;
+/* margin:0; */
+height: 70px;
+background-color: black;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 20px; /* Better padding management */
+position: fixed;
+top:0;
+left:0;
+/* top: 0; */
+z-index: 999;
+}
+
+.logo img {
+width: 50px;
+height: 50px; 
+border-radius: 50%;
+/* Maintain aspect ratio */
+}
+
+.navbar ul {
+display: flex;
+list-style-type: none;
+gap: 30px; /* Simplified gap property */
+font-size: 20px;
+}
+
+.navbar a {
+text-decoration: none;
+color: white;
+/* transition: color 0.3s ease; Smooth hover effect */
+}
+
+.navbar a:hover {
+color: #fede00; /* Hover effect */
+}
+
+.head {
+text-align: center;
+margin: 80px 0;
+font-size: 32px;
+}
+
+.products {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 30px;
+padding: 0 20px;
+margin: 30px auto;
+/* background-color: aqua; */
+max-width: 1400px;
+}
+
+.box {
+border: 1px solid rgb(154, 164, 174);
+border-radius: 5px;
+padding: 20px;
+text-align: center;
+box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+transform: translateY(-5px); /* Lift effect on hover */
+box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.box .image {
+width: 60%;
+height: auto;
+margin: 0 auto;
+}
+
+.box .details {
+text-align: start;
+margin-top: 20px;
+}
+
+.box .details button {
+padding: 8px 20px;
+border-radius: 30px;
+border: none;
+margin-top: 15px;
+background-color: #fede00;
+cursor: pointer;
+font-weight: bold;
+/* transition: background-color 0.3s ease; */
+}
+
+.box .details button:hover {
+background-color: #e6c900;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.99px) {
+.navbar {
+    height: 60px;
+    padding: 0 15px;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.navbar ul {
+    gap: 20px;
+    font-size: 16px;
+}
+
+.head {
+    font-size: 24px;
+}
+}
+
+@media screen and (max-width: 575.98px) {
+.navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+}
+
+.navbar ul {
+    margin-top: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logo img {
+    margin-left: 0;
+}
+
+.products {
+    grid-template-columns: 1fr;
+    padding: 0 15px;
+}
+}
+/* checking */
+/* p{
+    background-color: #fede00;
+    padding:20px;
+    height:auto;
+} */
